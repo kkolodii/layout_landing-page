@@ -1,0 +1,29 @@
+.page {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  color: $main-text-color;
+  font-size: 16px;
+  line-height: 140%;
+
+  scroll-behavior: smooth;
+
+  &_body {
+    margin: 0;
+  }
+
+  &_menu {
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+
+    opacity: 0;
+    pointer-events: none;
+
+    &:target {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+}
